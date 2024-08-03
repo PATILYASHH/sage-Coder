@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Resource Hub</title>
-    <!-- Bootstrap CSS -->
+    <title>Roadmaps | Code Resource Hub</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        .roadmap-card {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .roadmap-card:hover {
+            transform: scale(1.05);
+        }
+        .roadmap-content {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><i class="fa fa-code"></i> Code Resource Hub</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,63 +49,69 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section text-center py-5">
+    <!-- Roadmaps Content -->
+    <section class="roadmaps-section py-5">
         <div class="container">
-            <h1>Welcome to Code Resource Hub</h1>
-            <p>Your one-stop destination for coding resources, roadmaps, and more.</p>
-        </div>
-    </section>
-
-    <!-- Main Content Section -->
-    <section class="main-content py-5">
-        <div class="container">
-            <!-- You can link to the new pages from here too -->
+            <h2 class="text-center mb-4">Coding Roadmaps</h2>
             <div class="row">
-                <div class="col-md-4">
+                <!-- Roadmap Card -->
+                <div class="col-md-4 roadmap-card" data-target="#web-dev-roadmap">
                     <div class="card mb-4">
                         <div class="card-body text-center">
-                            <i class="fa fa-road fa-3x mb-3"></i>
-                            <h5 class="card-title">Roadmaps</h5>
-                            <p class="card-text">Explore detailed coding roadmaps to guide your learning journey.</p>
-                            <a href="roadmaps.html" class="btn btn-primary">View Roadmaps</a>
+                            <i class="fa fa-laptop-code fa-3x mb-3"></i>
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">A comprehensive roadmap for becoming a web developer.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <!-- Roadmap Card -->
+                <div class="col-md-4 roadmap-card" data-target="#data-science-roadmap">
                     <div class="card mb-4">
                         <div class="card-body text-center">
-                            <i class="fa fa-lightbulb fa-3x mb-3"></i>
-                            <h5 class="card-title">Issue Solving</h5>
-                            <p class="card-text">Find solutions to common coding problems and issues.</p>
-                            <a href="issue-solving.html" class="btn btn-primary">Solve Issues</a>
+                            <i class="fa fa-database fa-3x mb-3"></i>
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="card-text">Steps and resources to become a data scientist.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <!-- Roadmap Card -->
+                <div class="col-md-4 roadmap-card" data-target="#mobile-dev-roadmap">
                     <div class="card mb-4">
                         <div class="card-body text-center">
-                            <i class="fa fa-key fa-3x mb-3"></i>
-                            <h5 class="card-title">API Providers</h5>
-                            <p class="card-text">Discover various platforms that offer API keys and services.</p>
-                            <a href="api-providers.html" class="btn btn-primary">Find APIs</a>
+                            <i class="fa fa-mobile-alt fa-3x mb-3"></i>
+                            <h5 class="card-title">Mobile Development</h5>
+                            <p class="card-text">Roadmap to excel in mobile app development.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Add more roadmap cards as needed -->
+            </div>
+
+            <!-- Roadmap Diagrams -->
+            <div id="web-dev-roadmap" class="roadmap-content">
+                <h3 class="text-center">Web Development Roadmap</h3>
+                <img src="web-dev-roadmap.png" alt="Web Development Roadmap" class="img-fluid">
+            </div>
+            <div id="data-science-roadmap" class="roadmap-content">
+                <h3 class="text-center">Data Science Roadmap</h3>
+                <img src="data-science-roadmap.png" alt="Data Science Roadmap" class="img-fluid">
+            </div>
+            <div id="mobile-dev-roadmap" class="roadmap-content">
+                <h3 class="text-center">Mobile Development Roadmap</h3>
+                <img src="mobile-dev-roadmap.png" alt="Mobile Development Roadmap" class="img-fluid">
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer class="bg-light text-center py-4">
         <p>&copy; 2024 Code Resource Hub. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>

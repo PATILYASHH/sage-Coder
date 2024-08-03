@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Solving | Code Resource Hub</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><i class="fa fa-code"></i> Code Resource Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roadmaps.html"><i class="fa fa-road"></i> Roadmaps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="issue-solving.html"><i class="fa fa-lightbulb"></i> Issue Solving</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="api-providers.html"><i class="fa fa-key"></i> API Providers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="theme-toggle"><i class="fa fa-moon"></i> Dark Mode</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Issue Solving Content -->
+    <section class="issue-solving-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Common Coding Issues</h2>
+
+            <!-- Search Interface -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <input type="text" id="issue-search" class="form-control" placeholder="Search Issues...">
+                </div>
+            </div>
+
+            <!-- Issue List -->
+            <div class="row" id="issue-list">
+                <!-- Example Issue -->
+                <div class="col-md-4 issue-card" data-issue="undefined variable">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Undefined Variable</h5>
+                            <p class="card-text">This error occurs when a variable is used without being declared first. Ensure that the variable is declared and initialized before use.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 issue-card" data-issue="null reference exception">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Null Reference Exception</h5>
+                            <p class="card-text">This error happens when attempting to access a member on a null object reference. Check if the object is null before accessing its members.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 issue-card" data-issue="index out of bounds">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Index Out of Bounds</h5>
+                            <p class="card-text">Occurs when trying to access an array element with an index that is out of the valid range. Ensure the index is within the bounds of the array.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 issue-card" data-issue="syntax error">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Syntax Error</h5>
+                            <p class="card-text">A syntax error happens when the code does not conform to the language's syntax rules. Check for missing or misplaced characters in your code.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 issue-card" data-issue="type mismatch">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Type Mismatch</h5>
+                            <p class="card-text">Occurs when an operation is performed on incompatible data types. Ensure that data types are compatible for the operation being performed.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 issue-card" data-issue="infinite loop">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Infinite Loop</h5>
+                            <p class="card-text">An infinite loop occurs when the loop's terminating condition is never met. Ensure that the loop has a correct terminating condition.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 issue-card" data-issue="division by zero">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Division by Zero</h5>
+                            <p class="card-text">This error happens when dividing a number by zero. Ensure that the divisor is not zero before performing the division.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 issue-card" data-issue="file not found">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">File Not Found</h5>
+                            <p class="card-text">Occurs when attempting to access a file that does not exist. Ensure the file path is correct and the file exists.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 issue-card" data-issue="access denied">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Access Denied</h5>
+                            <p class="card-text">This error occurs when the user does not have permission to access a resource. Check user permissions and authentication settings.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 issue-card" data-issue="deadlock">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Deadlock</h5>
+                            <p class="card-text">A deadlock happens when two or more processes are waiting indefinitely for resources held by each other. Implement proper resource management and avoid circular dependencies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Code Resource Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

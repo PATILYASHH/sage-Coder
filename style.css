@@ -1,0 +1,28 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar, body.dark-mode .footer {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .card {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card-title {
+    color: #e0e0e0;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #3b3b3b;
+    border-color: #3b3b3b;
+}
+
+body.dark-mode .btn-primary:hover {
+    background-color: #484848;
+    border-color: #484848;
+}

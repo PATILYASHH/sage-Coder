@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Providers | Code Resource Hub</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><i class="fa fa-code"></i> Code Resource Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roadmaps.html"><i class="fa fa-road"></i> Roadmaps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="issue-solving.html"><i class="fa fa-lightbulb"></i> Issue Solving</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="api-providers.html"><i class="fa fa-key"></i> API Providers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="theme-toggle"><i class="fa fa-moon"></i> Dark Mode</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- API Providers Content -->
+    <section class="api-providers-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">API Providers</h2>
+
+            <!-- Search and Filter Interface -->
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <input type="text" id="api-search" class="form-control" placeholder="Search APIs...">
+                </div>
+                <div class="col-md-3">
+                    <select id="api-category" class="form-control">
+                        <option value="">All Categories</option>
+                        <option value="weather">Weather</option>
+                        <option value="maps">Maps</option>
+                        <option value="payment">Payment</option>
+                        <option value="social">Social</option>
+                        <!-- Add more categories as needed -->
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select id="api-price" class="form-control">
+                        <option value="">All Prices</option>
+                        <option value="free">Free</option>
+                        <option value="paid">Paid</option>
+                        <option value="freemium">Freemium</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- API Providers List -->
+            <div class="row" id="api-providers-list">
+                <!-- Weather APIs -->
+                <div class="col-md-4 api-provider-card" data-category="weather" data-price="freemium">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fa fa-cloud fa-3x mb-3"></i>
+                            <h5 class="card-title">OpenWeatherMap</h5>
+                            <p class="card-text">Provides weather data for cities worldwide.</p>
+                            <p class="card-text"><strong>Category:</strong> Weather</p>
+                            <p class="card-text"><strong>Price:</strong> Freemium</p>
+                            <a href="https://openweathermap.org/api" class="btn btn-primary" target="_blank">View API</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 api-provider-card" data-category="weather" data-price="freemium">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fa fa-cloud fa-3x mb-3"></i>
+                            <h5 class="card-title">Weatherstack</h5>
+                            <p class="card-text">Offers real-time weather information and historical data.</p>
+                            <p class="card-text"><strong>Category:</strong> Weather</p>
+                            <p class="card-text"><strong>Price:</strong> Freemium</p>
+                            <a href="https://weatherstack.com/" class="btn btn-primary" target="_blank">View API</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 api-provider-card" data-category="weather" data-price="freemium">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fa fa-cloud fa-3x mb-3"></i>
+                            <h5 class="card-title">WeatherAPI</h5>
+                            <p class="card-text">Provides current and forecast weather data.</p>
+                            <p class="card-text"><strong>Category:</strong> Weather</p>
+                            <p class="card-text"><strong>Price:</strong> Freemium</p>
+                            <a href="https://www.weatherapi.com/" class="btn btn-primary" target="_blank">View API</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maps APIs -->
+                <div class="col-md-4 api-provider-card" data-category="maps" data-price="freemium">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fa fa-map fa-3x mb-3"></i>
+                            <h5 class="card-title">Google Maps API</h5>
+                            <p class="card-text">Provides maps, geocoding, and location data.</p>
+                            <p class="card-text"><strong>Category:</strong> Maps</p>
+                            <p class="card-text"><strong>Price:</strong> Paid</p>
+                            <a href="https://developers.google.com/maps/documentation" class="btn btn-primary" target="_blank">View API</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 api-provider-card" data-category="maps" data-price="freemium">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fa fa-map fa-3x mb-3"></i>
+                            <h5 class="card-title">Mapbox</h5>
+                            <p class="card-text">Offers customizable maps and location data.</p>
+                            <p class="card-text"><strong>Category:</strong> Maps</p>
+                            <p class="card-text"><strong>Price:</strong> Freemium</p>
+                            <a href="https://www.mapbox.com/" class="btn btn-primary" target="_blank">View API</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 api-provider-card" data-category="maps" data-price="freemium">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fa fa-map fa-3x mb-3"></i>
+                            <h5 class="card-title">Here Maps</h5>
+                            <p class="card-text">Provides mapping, geocoding, and routing services.</p>
+                            <p class="card-text"><strong>Category:</strong> Maps</p>
+                            <p class="card-text"><strong>Price:</strong> Freemium</p>
+                            <a href="https://developer.here.com/" class="btn btn-primary" target="_blank">View API</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Payment APIs -->
+                <div class="col-md-4 api-provider-card" data-category="payment" data-price="paid">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fa fa-credit-card fa-3x mb-3"></i>
+                            <h5 class="card-title">Stripe</h5>
+                            <p class="card-text">Offers payment processing and financial infrastructure.</p>
+                            <p class="card-text"><strong>Category:</strong> Payment</p>
+                            <p class="card-text"><strong>Price:</strong> Paid</p>
+                            <a href="https://stripe.com/docs/api" class="btn btn-primary" target="_blank">View API</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 api-provider-card" data-category="payment" data-price="paid">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fa fa-credit-card fa-3x mb-3"></i>
+                            <h5 class="card-title">PayPal</h5>
+                            <p class="card-text">Provides online payment solutions and processing.</p>
+                            <p class="card-text"><strong>Category:</strong> Payment</p>
+                            <p class="card-text"><strong>Price:</strong> Paid</p>
+                            <a href="https://developer.paypal.com/" class="btn btn-primary" target="_blank">View API</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 api-provider-card" data-category="payment" data-price="paid">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fa fa-credit-card fa-3x mb-3"></i>
+                            <h5 class="card-title">Square</h5>
+                            <p class="card-text">Offers payment processing and business solutions.</p>
+                            <p class="card-text"><strong>Category:</strong> Payment</p>
+                            <p class="card-text"><strong>Price:</strong> Paid</p>
+                            <a href="https://developer.squareup.com/" class="btn btn-primary" target="_blank">View API</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media APIs -->
+                <div class="col-md-4 api-provider-card" data-category="social" data-price="freemium">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="fa fa-twitter fa-3x mb-3"></i>
+                            <h5 class="card-title">Twitter API</h5>
+                            <p class="card-text">Allows interaction with Twitter data and functionalities.</p>
+                            <p class="card-text"><strong>Category:</strong> Social</p>
+                            <p class="card-text"><strong>Price:</strong> Freemium</p>
+                            <a href="https://developer.twitter.com/en/docs" class="btn btn-primary" target="_blank">View API</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more social media APIs if needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Code Resource Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
