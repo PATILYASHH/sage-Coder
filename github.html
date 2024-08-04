@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories - Code Resource Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .top-button {
+            position: fixed;
+            top: 60px; /* Adjusted to move the button down */
+            left: 20px;
+            z-index: 1000;
+        }
+        .top-button a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Button -->
+    <div class="top-button">
+        <a href="https://ezissue.vercel.app" class="btn btn-primary">
+            <i class="fa fa-external-link-alt"></i> Visit Ezissue
+        </a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><i class="fa fa-code"></i> Code Resource Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="roadmaps.html"><i class="fa fa-road"></i> Roadmaps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="issue-solving.html"><i class="fa fa-lightbulb"></i> Issue Solving</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="api-providers.html"><i class="fa fa-key"></i> API Providers</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="theme-toggle"><i class="fa fa-moon"></i> Dark Mode</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="main-content py-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Top GitHub Repositories</h1>
+            <div class="row">
+                <!-- Example Repo 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Repository Name 1</h5>
+                            <p class="card-text">Brief description of the repository.</p>
+                            <a href="https://github.com/username/repo1" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example Repo 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Repository Name 2</h5>
+                            <p class="card-text">Brief description of the repository.</p>
+                            <a href="https://github.com/username/repo2" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add 8 more repositories here in the same format -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Code Resource Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

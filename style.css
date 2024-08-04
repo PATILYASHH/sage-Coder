@@ -26,3 +26,11 @@ body.dark-mode .btn-primary:hover {
     background-color: #484848;
     border-color: #484848;
 }
+/* Add this to your existing CSS file */
+.wellmas {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6b6b, #ff8e53, #fcbf49, #ffdd4a);
+    -webkit-background-clip: text;
+    color: transparent;
+}
