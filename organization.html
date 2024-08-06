@@ -32,20 +32,27 @@
                 <li class="nav-item">
                     <a class="nav-link" href="api-providers.html"><i class="fa fa-key"></i> API Providers</a>
                 </li>
-                
+                <li class="nav-item">
                     <a class="nav-link" href="#" id="theme-toggle"><i class="fa fa-moon"></i> Dark Mode</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <!-- Search Bar -->
+    <section class="search-bar py-3">
+        <div class="container">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search organizations or filter by skills..." onkeyup="filterOrganizations()">
+        </div>
+    </section>
+
     <!-- Main Content Section -->
     <section class="main-content py-5">
         <div class="container">
             <h1 class="text-center mb-5">Top Organizations</h1>
-            <div class="row">
+            <div class="row" id="organizationList">
                 <!-- Organization 1: Google -->
-                <div class="col-md-4">
+                <div class="col-md-4 organization-card" data-skills="python, javascript, cloud">
                     <div class="card mb-4">
                         <div class="card-body text-center">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png" alt="Google Logo" class="mb-3" style="max-width: 100px;">
@@ -57,7 +64,7 @@
                 </div>
 
                 <!-- Organization 2: Microsoft -->
-                <div class="col-md-4">
+                <div class="col-md-4 organization-card" data-skills="csharp, .net, azure">
                     <div class="card mb-4">
                         <div class="card-body text-center">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png" alt="Microsoft Logo" class="mb-3" style="max-width: 100px;">
@@ -69,10 +76,10 @@
                 </div>
 
                 <!-- Organization 3: Mozilla -->
-                <div class="col-md-4">
+                <div class="col-md-4 organization-card" data-skills="javascript, rust, open-source">
                     <div class="card mb-4">
                         <div class="card-body text-center">
-                            <img src="hhttps://logomak.com/blog/wp-content/uploads/2023/12/Mozilla-Firefox-Logo-2017-500x281-min.jpg" alt="Mozilla Logo" class="mb-3" style="max-width: 100px;">
+                            <img src="https://logomak.com/blog/wp-content/uploads/2023/12/Mozilla-Firefox-Logo-2017-500x281-min.jpg" alt="Mozilla Logo" class="mb-3" style="max-width: 100px;">
                             <h5 class="card-title">Mozilla</h5>
                             <p class="card-text">Mozilla is known for its free and open-source software, particularly the Firefox web browser.</p>
                             <a href="https://www.mozilla.org/" class="btn btn-primary" target="_blank">Learn More</a>
@@ -80,7 +87,149 @@
                     </div>
                 </div>
 
-                <!-- Add more organizations as needed -->
+                <!-- Organization 4: Apache Software Foundation -->
+                <div class="col-md-4 organization-card" data-skills="java, big data, cloud">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Apache_Foundation_logo.svg/512px-Apache_Foundation_logo.svg.png" alt="Apache Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">Apache Software Foundation</h5>
+                            <p class="card-text">Apache Software Foundation supports Apache software projects, including the Apache HTTP Server.</p>
+                            <a href="https://www.apache.org/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 5: Red Hat -->
+                <div class="col-md-4 organization-card" data-skills="linux, cloud, devops">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/RedHat_logo.svg/512px-RedHat_logo.svg.png" alt="Red Hat Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">Red Hat</h5>
+                            <p class="card-text">Red Hat is an American multinational software company that provides open-source software products.</p>
+                            <a href="https://www.redhat.com/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 6: Wikimedia Foundation -->
+                <div class="col-md-4 organization-card" data-skills="python, mediawiki, open-source">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikimedia_Foundation_logo_-_vertical.svg/400px-Wikimedia_Foundation_logo_-_vertical.svg.png" alt="Wikimedia Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">Wikimedia Foundation</h5>
+                            <p class="card-text">Wikimedia Foundation hosts Wikipedia and other free knowledge projects.</p>
+                            <a href="https://wikimediafoundation.org/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 7: Python Software Foundation -->
+                <div class="col-md-4 organization-card" data-skills="python, open-source, django">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png" alt="Python Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">Python Software Foundation</h5>
+                            <p class="card-text">The Python Software Foundation promotes, protects, and advances the Python programming language.</p>
+                            <a href="https://www.python.org/psf/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 8: KDE -->
+                <div class="col-md-4 organization-card" data-skills="c++, qt, open-source">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/64px-KDE_logo.svg/512px-64px-KDE_logo.svg.png" alt="KDE Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">KDE</h5>
+                            <p class="card-text">KDE is an international free software community that develops free and open-source software.</p>
+                            <a href="https://kde.org/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 9: Blender Foundation -->
+                <div class="col-md-4 organization-card" data-skills="python, 3d, animation">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/512px-Blender_logo_no_text.svg.png" alt="Blender Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">Blender Foundation</h5>
+                            <p class="card-text">Blender Foundation develops Blender, an open-source 3D graphics software for animation, modeling, and more.</p>
+                            <a href="https://www.blender.org/foundation/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 10: GitLab -->
+                <div class="col-md-4 organization-card" data-skills="git, ruby, devops">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/GitLab_logo.svg/512px-GitLab_logo.svg.png" alt="GitLab Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">GitLab</h5>
+                            <p class="card-text">GitLab provides a complete DevOps platform, delivered as a single application.</p>
+                            <a href="https://about.gitlab.com/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 11: CERN -->
+                <div class="col-md-4 organization-card" data-skills="physics, c++, python">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/CERN_logo.svg/512px-CERN_logo.svg.png" alt="CERN Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">CERN</h5>
+                            <p class="card-text">CERN is a European research organization that operates the largest particle physics laboratory in the world.</p>
+                            <a href="https://home.cern/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 12: OpenStreetMap -->
+                <div class="col-md-4 organization-card" data-skills="mapping, open-source, python">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/OpenStreetMap_logo.svg/512px-OpenStreetMap_logo.svg.png" alt="OpenStreetMap Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">OpenStreetMap</h5>
+                            <p class="card-text">OpenStreetMap is a collaborative project to create a free editable map of the world.</p>
+                            <a href="https://www.openstreetmap.org/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 13: Debian -->
+                <div class="col-md-4 organization-card" data-skills="linux, packaging, open-source">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Debian_logo.svg/512px-Debian_logo.svg.png" alt="Debian Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">Debian</h5>
+                            <p class="card-text">Debian is a Unix-like operating system consisting entirely of free and open-source software.</p>
+                            <a href="https://www.debian.org/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 14: The Linux Foundation -->
+                <div class="col-md-4 organization-card" data-skills="linux, cloud, devops">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Linux_Foundation_logo.svg/512px-Linux_Foundation_logo.svg.png" alt="Linux Foundation Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">The Linux Foundation</h5>
+                            <p class="card-text">The Linux Foundation supports the creation of sustainable open source ecosystems.</p>
+                            <a href="https://www.linuxfoundation.org/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organization 15: GNOME -->
+                <div class="col-md-4 organization-card" data-skills="c, gtk, linux">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/GNOME_logo.svg/512px-GNOME_logo.svg.png" alt="GNOME Logo" class="mb-3" style="max-width: 100px;">
+                            <h5 class="card-title">GNOME</h5>
+                            <p class="card-text">GNOME is a desktop environment and graphical user interface that runs on top of a computer operating system.</p>
+                            <a href="https://www.gnome.org/" class="btn btn-primary" target="_blank">Learn More</a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -97,5 +246,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- Custom Script -->
     <script src="script.js"></script>
+    <!-- Organization Filter Script -->
+    <script>
+        function filterOrganizations() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const organizations = document.getElementsByClassName('organization-card');
+
+            Array.from(organizations).forEach(org => {
+                const skills = org.getAttribute('data-skills');
+                const orgText = org.textContent.toLowerCase();
+
+                if (orgText.includes(input) || skills.includes(input)) {
+                    org.style.display = 'block';
+                } else {
+                    org.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>
