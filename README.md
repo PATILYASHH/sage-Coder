@@ -62,7 +62,7 @@ This project is licensed under the MIT License.
 ---
 
 Thank you for visiting the **Code Resource Hub**! We hope this platform serves as a valuable resource for your development journey.
-```
+
 
 ### **Summary**
 
