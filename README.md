@@ -64,13 +64,3 @@ This project is licensed under the MIT License.
 Thank you for visiting the **Code Resource Hub**! We hope this platform serves as a valuable resource for your development journey.
 
 
-### **Summary**
-
-- **Project Overview**: Provides a description of what the project is about.
-- **Features**: Lists the key functionalities.
-- **Setup**: Instructions on how to set up and run the project.
-- **Customization**: Encourages users to modify the code.
-- **Contributing**: Information on how others can contribute.
-- **License & Contact**: License details and a way to contact you.
-
-Replace `your-repo-name` and `your-email@example.com` with your actual repository name and contact email. Let me know if you need any more adjustments!
