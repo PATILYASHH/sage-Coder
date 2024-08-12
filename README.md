@@ -1,7 +1,7 @@
 
-# Code Resource Hub
+# Sage Coder
 
-Welcome to the **Code Resource Hub**! This website serves as a centralized platform for developers, offering roadmaps, issue-solving guides, API key provider platforms, and more.
+Welcome to the **Sage Coder**! This website serves as a centralized platform for developers, offering roadmaps, issue-solving guides, API key provider platforms, and more.
 
 ## Features
 
