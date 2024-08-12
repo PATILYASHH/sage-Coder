@@ -60,7 +60,14 @@ We welcome contributions! If you'd like to contribute to this project, please fo
 This project is licensed under the MIT License.
 
 ---
+### Acknowledgments
+
+We extend our heartfelt thanks to everyone who has contributed to Electronics Circuit Simulator. Your support and contributions are invaluable to the success of this project. ❤️
+
+<a href="https://github.com/Thesagecoder/sage-Coder/graphs/contributors">
+  <img src="https://github.com/Thesagecoder/sage-Coder" />
+</a>
+
+---
 
 Thank you for visiting the **Code Resource Hub**! We hope this platform serves as a valuable resource for your development journey.
-
-
