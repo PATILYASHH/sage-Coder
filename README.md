@@ -62,7 +62,7 @@ This project is licensed under the MIT License.
 ---
 ### Acknowledgments
 
-We extend our heartfelt thanks to everyone who has contributed to Electronics Circuit Simulator. Your support and contributions are invaluable to the success of this project. ❤️
+We extend our heartfelt thanks to everyone who has contributed to ***Sage Coder***. Your support and contributions are invaluable to the success of this project. ❤️
 
 <a href="https://github.com/Thesagecoder/sage-Coder/graphs/contributors">
   <img src="https://github.com/Thesagecoder/sage-Coder" />
