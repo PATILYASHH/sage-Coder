@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://sagecoder.vercel.app/</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/index.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/doc.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/roadmaps.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/issue-solving.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/api-providers.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/extension.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/organization.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/github.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/study.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/code-editor.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/youtubers.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagecoder.vercel.app/ytvideo.html</loc>
+  <lastmod>2024-08-18T15:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
